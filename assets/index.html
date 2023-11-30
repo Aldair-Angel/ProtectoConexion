@@ -314,25 +314,25 @@
             </div>
             <div class="contactForm" id="contactForm">
                 <h2>Enviamos un Mensaje</h2>
-                <form class="formBox">
+                <form method="post" action="/validar" class="formBox">
                     <div class="formulario__grupo inputBox w50" id="grupo__nombre">
-                        <input type="text" pattern="[a-zA-Z ]+" name="grupo__nombre"  required>
+                        <input id="nombre" type="text" pattern="[a-zA-Z ]+" name="nombre"  required>
                         <span>Nombre</span>
                     </div>
                     <div class="formulario__grupo inputBox w50" id="grupo__apellido">
-                        <input type="text" pattern="[a-zA-Z ]+" name="grupo__apellido" required>
+                        <input id="apellido" type="text" pattern="[a-zA-Z ]+" name="apellido" required>
                         <span>Apellido</span>
                     </div>
                     <div class="formulario__grupo inputBox w50" id="grupo__correo">
-                        <input type="email" name="grupo__correo" required>
+                        <input id="correo" type="email" name="correo" required>
                         <span>Correo Electronico</span>
                     </div>
                     <div class="formulario__grupo inputBox w50" id="grupo__celular">
-                        <input type="number" name="grupo__celular" required>
+                        <input id="celular" type="number" name="celular" required>
                         <span>Celular</span>
                     </div>
                     <div class="formulario__grupo inputBox w100" id="grupo__mensaje">
-                        <textarea type="text" name="grupo__mensaje" required></textarea>
+                        <input id="mensaje" type="text" name="mensaje" required></input>
                         <span>Escribe tu Mensaje aquí...</span>
                     </div>
                     <div class="inputBox w100">
