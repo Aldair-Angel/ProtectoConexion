@@ -151,15 +151,15 @@ section {
     height: auto;
     width: auto;
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: 50px;
     position: relative;
 }
 .container-his p{
     position: relative;
-    left: 4%;
+    left: 2%;
     top: 18%;
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 .container-his img{

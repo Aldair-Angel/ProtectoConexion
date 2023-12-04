@@ -222,6 +222,7 @@ header .navigation .navigation-items a:hover:before{
 }
 .nosotros-txt {
     width: 50%;
+    padding-left: 60px;
 }
 .nosotros-txt h2 {
     font-size: 45px;
