@@ -1,8 +1,9 @@
 const express = require("express");
 const mysql = require("mysql");
 const path = require("path");
-const app = express();  
 const cors = require("cors");
+
+const app = express(); 
 
 //archivos express json 
 app.use(express.json());
@@ -38,6 +39,8 @@ app.use("/docs", express.static(__dirname + '/assets/docs'));
 app.use("/html", express.static(__dirname + '/assets/html'));
 app.use("/js", express.static(__dirname + '/assets/js'));
 
+
+//mysql conexion
 app.post("/validar", function (req, res) {
     const datos = req.body;
     let nom = datos.nombre;
@@ -58,8 +61,15 @@ app.post("/validar", function (req, res) {
     })
 });
 
+//Rutas para obtener fechas civicas  por fecha especifica
+app.get("/api/dates/:fechaactual",(req, res) => {
+  conexion.query(
+    "Select fechas, celebracion, descripcion FROM `FECHAS_CIVICAS` where fechas = ? ;",[req.params.fechaactual],(err,data)=>{
+      if(err) throw err;
+      res.json(data[0] || null)
+    }
+  )
+});
     
-
-
 app.listen(3000);
 console.log('Server on port 3000')
