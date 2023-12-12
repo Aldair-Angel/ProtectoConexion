@@ -173,6 +173,26 @@ header .navigation .navigation-items a:hover:before{
     transition-property: clip-path;
 }
 
+/* fechas ciivicas */
+.fechas_containes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 5px solid #09a6d4;
+    font-style: italic;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 200px;
+}
+
+.fecha_subtitulo{
+    display: none;
+}
+
 /*acerca*/
 .container {
     max-width: 100%;
@@ -534,11 +554,11 @@ header .navigation .navigation-items a:hover:before{
     font-size: 24px;
     font-weight: 500;
 }
-.container-cont .contactInfo ul .info-cont {
+.container-cont .contactInfo ul {
     position: relative;
     margin: 20px 0;
 }
-.container-cont .contactInfo ul .info-cont li {
+.container-cont .contactInfo ul li {
     position: relative;
     list-style: none;
     display: flex;
@@ -546,14 +566,14 @@ header .navigation .navigation-items a:hover:before{
     cursor: pointer;
     align-items: flex-start;
 }
-.container-cont .contactInfo ul .info-cont li span:nth-child(1) {
+.container-cont .contactInfo ul li span:nth-child(1) {
     width: 30px;
     min-width: 30px;
 }
-.container-cont .contactInfo ul .info-cont li span:nth-child(1) i{
+.container-cont .contactInfo ul li span:nth-child(1) i{
     max-width: 100%;
 }
-.container-cont .contactInfo ul .info-cont li span:nth-child(2) {
+.container-cont .contactInfo ul li span:nth-child(2) {
     color: #fff;
     margin-left: 10px;
     font-weight: 300;
@@ -772,7 +792,7 @@ html {
         box-shadow: 0 5px 25px rgb(1, 1, 1 / 20%);
     }
     .menu-btn {
-        background: url(/assets/img/menu.png)no-repeat;
+        background: url(/img/menu.png)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;

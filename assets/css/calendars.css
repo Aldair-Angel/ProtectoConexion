@@ -66,55 +66,32 @@ header .navigation .navigation-items a:hover:before{
 }
 
 /*Carrusel*/
-.home {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.home .content {
-    z-index: 888;
-    color: #fff;
-    width: 100%;
-    margin-top: 50px;
-    display: none;
-    text-align: center;
-}
-.home .content.active {
-    display: block;
-}
-.home .content h1 {
-    font-size: 4em;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 60px;
-    margin-bottom: 40px;
-}
-.home img {
-    z-index: 000;
+header {
+    z-index: 999;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.cont {
-    background-color: #00000099;
-    height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 15px 200px;
+    transition: 0.5s ease;
 }
-.cont a{
+header .brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .brand:hover {
+    color: #09a6d4;
+}
+header .navigation {
+    position: relative;
+}
+header .navigation .navigation-items a{
     position: relative;
     color: #fff;
     font-size: 1em;
@@ -123,7 +100,7 @@ header .navigation .navigation-items a:hover:before{
     margin-left: 30px;
     transition: 0.3s ease;
 }
-.cont a:before{
+header .navigation .navigation-items a:before{
     content: '';
     position: absolute;
     background: #fff;
@@ -133,7 +110,7 @@ header .navigation .navigation-items a:hover:before{
     left: 0;
     transition: 0.5s ease;
 }
-.cont a:hover:before{
+header .navigation .navigation-items a:hover:before{
     width: 100%;
     background: #09a6d4;
 }

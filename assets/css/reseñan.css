@@ -105,7 +105,7 @@ section {
     height: 100%;
     object-fit: cover;
 }
-.cont {
+/* .cont {
     background-color: #00000099;
     height: 80px;
     display: flex;
@@ -139,50 +139,49 @@ section {
 .cont a:hover:before{
     width: 100%;
     background: #09a6d4;
-}
+} */
 
 
-/*contenido*/
+
+
+
+/* contenido */
 #About_container {
     margin: 20px 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
-.container-his{
-    height: auto;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 50px;
-    position: relative;
-}
-.container-his p{
-    position: relative;
-    left: 2%;
-    top: 18%;
-    width: 50%;
-    height: auto;
-}
+
 .container-his img{
-    position: absolute;
     width: 400px;
     height: 400px;
     right: 100px;
     top: 0px;
+} 
+
+.container_datos{
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.container-dir ul{
+    width: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.container-dir p{
+    margin-top: 20px;
+}
+
+  
 .container-dir{
     width: auto;
     margin-right: 185px;
     position: relative;
     left: 10%;
     margin-top: 30px;
-}
-.container-dir ul{
-    width: auto;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.container-dir p{
-    margin-top: 20px;
 }
 
 .Logros_container{
@@ -277,6 +276,34 @@ section {
         grid-gap:30px;
         padding: 35px 0px;
     }
+    
+}
+
+@media screen and (max-width:500px){
+
+    .container-his img{
+        width: 280px;
+        height: 300px;
+        right: 80px;
+        top: 0px;
+    }
+
+    .container-dir{
+        width: auto;
+        margin-right: 20%;
+        position: relative;
+        left: 10%;
+        margin-top: 30px;
+    }
+
+    .pie-pagina{
+        width: 100%;
+        background-color: hsl(229, 92%, 20%);
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
@@ -347,7 +374,7 @@ html {
         box-shadow: 0 5px 25px rgb(1, 1, 1 / 20%);
     }
     .menu-btn {
-        background: url(/assets/img/menu.png)no-repeat;
+        background: url(/img/menu.png)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -362,3 +389,5 @@ html {
         line-height: 60px;
     }
 }
+
+
